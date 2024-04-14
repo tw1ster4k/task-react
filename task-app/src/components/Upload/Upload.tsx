@@ -16,14 +16,18 @@ const Upload = () => {
     </Link>
     <img className={cnUpload("Image")} src={Restange} />
     <div className={cnUpload("Download")}>
-        <div className={cnUpload('Option')}>
-            <img src={Gallery} width={77} />
-            <p>Choose photo from gallery</p>
-        </div>
-        <div className={cnUpload('Option')}>
-            <img src={Camera} width={77} />
-            <p>Take photo with camera</p>
-        </div>
+        <Link to="/result" style={{textDecoration:"none"}} >
+            <div className={cnUpload('Option')}>
+                <img src={Gallery} width={77} />
+                <p>Choose photo from gallery</p>
+            </div>
+        </Link>
+        <Link to="/result" style={{textDecoration:"none"}} >
+            <div className={cnUpload('Option')}>
+                <img src={Camera} width={77} />
+                <p>Take photo with camera</p>
+            </div>
+        </Link>
     </div>
     </div>
   )
