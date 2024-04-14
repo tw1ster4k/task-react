@@ -4,17 +4,25 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 import Restange from "../../img/Restange.png"
 import Card from "../../blocks/Card/Card"
+import { useSelector } from "react-redux"
 
 const Home = () => {
     const cnHome  =  cn("Home")
     const [data, setData] = useState([{img:Restange, description:"Lego"},{img:Restange, description:"Lego"}])
+    //@ts-ignore
+    const auth = useSelector((state) => state.auth)
   return (
     <div className={cnHome()}>
         <header className={cnHome("Header")}>
             <h1 className={cnHome("H1")}>OneAI</h1>
+            {
+                auth ?
+                ""
+                :
             <Link to='/singin'>
                 <button className={cnHome("Link")}>Sing in</button>
             </Link>
+            }
         </header>
         <div className={cnHome("Content")}>
             {
