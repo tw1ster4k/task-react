@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Test Söhne";
+    src: url(../../../fonts/TestSöhne-Kräftig.otf);
+}
+
+.Upload{
+    max-width: 100%;
+    background: linear-gradient(70deg, #6600FF, #00CC99);
+    padding-bottom: 40px;
+    padding-top: 52px;
+}
+
+.Upload-Link{
+    margin-left: 34px;
+    border-radius: 30px;
+    height: 55px;
+    width: 184px;
+    background: #FCEFF9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #08070880;
+    border:none;
+    font: normal normal normal 30px/40px 'Test Söhne';
+    letter-spacing: 0px;
+    color: #080708;
+}
+
+.Upload-Image{
+    max-width: 90%;
+    border-radius: 20px;
+    background: #EEE5E900 0% 0% no-repeat padding-box;
+    box-shadow: inset 3px 3px 6px #EEE5E9;
+    border: 3px solid #EEE5E9;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.Upload-Download{
+    width: 90%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.Upload-Option{
+    max-height: 143px;
+    max-width: 143px;
+    background: transparent linear-gradient(135deg, #FFF7FC66 0%, #FFFFFF66 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 3px 3px 6px #EEE5E9;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font: normal normal normal 15px/20px 'Test Söhne';
+    letter-spacing: 0px;
+    color: #FCEFF9;
+}

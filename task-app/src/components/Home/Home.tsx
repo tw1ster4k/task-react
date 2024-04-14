@@ -19,7 +19,9 @@ const Home = () => {
         <div className={cnHome("Content")}>
             {
                 data.map((el, index) => 
-                <Card  key={index}  img={el.img} description={el.description} />
+                    <Link style={{textDecoration:"none"}} to="/upload">
+                        <Card  key={index}  img={el.img} description={el.description} />
+                    </Link>
                 )
             }
         </div>
